@@ -31,7 +31,7 @@
         - [Autoupdating](https://developer.chrome.com/extensions/autoupdate)
         - [Other Deployment Options](https://developer.chrome.com/extensions/external_extensions)
         - [Analytics](https://developer.chrome.com/apps/analytics)
-        - [Publishing Themese](https://developer.chrome.com/extensions/themes)
+        - [Publishing Themes](https://developer.chrome.com/extensions/themes)
     - [Chrome Platform APIs](https://developer.chrome.com/extensions/api_index)
         - [Javascript APIs](https://developer.chrome.com/extensions/api_index)
         - [Manifest File Format](https://developer.chrome.com/extensions/manifest)
@@ -50,3 +50,4 @@
 - icon.png
 - popup.html
 - popup.js
+
