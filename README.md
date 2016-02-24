@@ -48,5 +48,5 @@
 ### Files Included
 - manifest.json
 - icon.png
-- template.html
-- template.js
+- popup.html
+- popup.js
