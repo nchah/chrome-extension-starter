@@ -1,16 +1,16 @@
 {
-  "description": "Testing out a custom dark theme, still WIP",
+  "description": "A lightweight theme using a pastel interpretation of the google colors",
   "manifest_version": 2,
   "version": "1.0",
-  "name": "dark theme test",
+  "name": "Google Colors Pastel",
   "theme": {
     "colors" : {
       "frame" : [105, 105, 105],
-      "toolbar" : [105, 105, 105],
+      "toolbar" : [150, 200, 255],
       "ntp_text" : [105, 105, 105],
       "ntp_link" : [105, 105, 105],
       "ntp_section" : [105, 105, 105],
-      "ntp_background": [105, 105, 105],
+      "ntp_background": [245, 245, 245],
       "button_background" : [128, 128, 128]
     },
     "images": {
