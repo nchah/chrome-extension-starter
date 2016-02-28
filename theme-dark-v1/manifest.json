@@ -6,6 +6,7 @@
   "theme": {
     "colors" : {
       "frame" : [105, 105, 105],
+      "frame_inactive": [192, 192, 192],
       "toolbar" : [0, 0, 0],
       "ntp_text" : [192, 192, 192],
       "ntp_link" : [0, 0, 0],
@@ -27,7 +28,7 @@
       "ntp_logo_alternate": ""
     },
     "tints" : {
-      "buttons": [-1.0, -1.0, -1.0]
+      "buttons": [-1.0, -1.0, 0.75]
     }
   }
 }
