@@ -1,6 +1,8 @@
 # chrome-extension-starter
 
 ## Official Documentation
+This is a directory tree of links to various Chrome developer pages. 
+
 - [Extensions](https://developer.chrome.com/extensions)
     - Learn Basics
         - [Overview](https://developer.chrome.com/extensions/overview)
@@ -45,9 +47,16 @@
         - [Stack Overflow](http://stackoverflow.com/tags/google-chrome-extension/info)
 
 
-### Files Included
+## Folders
+
+
+### app-template
 - manifest.json
 - icon.png
 - popup.html
 - popup.js
+
+### theme-template
+- manifest.json
+- images
 
