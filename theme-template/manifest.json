@@ -1,16 +1,46 @@
 {
+  "description": "Check https://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/themes/theme_properties.h",
   "manifest_version": 2,
-
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
   "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+  "name": "",
+  "theme": {
+    "colors" : { // Colors are in RGB decimal format within []
+      "frame" : [],
+      "frame_inactive": [],
+      "frame_incognito": [],
+      "frame_incognito_inactive": [], 
+      "toolbar" : [],
+      "tab_text": [],
+      "tab_background_text": [],
+      "bookmark_text": [],
+      "ntp_background": [],
+      "ntp_text" : [],
+      "ntp_link" : [],
+      "ntp_link_underline": [],
+      "ntp_header": [],
+      "ntp_section" : [],
+      "ntp_section_text": [],
+      "ntp_section_link": [],
+      "ntp_section_link_underline": [],
+      "button_background": []
+    },
+    "images": {
+    "theme_frame": "images/",
+    "theme_tab_background": "images/" ,
+    "theme_toolbar": "images/" 
+    },
+    "properties": {
+      "ntp_background_alignment": "top, center, left, right, or bottom",
+      "ntp_background_repeat": "repeat_x, repeat_y, repeat, or no-repeat",
+      "ntp_logo_alternate": ""
+    },
+    "tints" : {
+      "buttons": [-1.0, -1.0, -1.0],
+      "frame": [-1.0, -1.0, -1.0],
+      "frame_inactive": [-1.0, -1.0, -1.0],
+      "frame_incognito": [-1.0, -1.0, -1.0],
+      "frame_incognito_inactive": [-1.0, -1.0, -1.0],
+      "background_tab": [-1.0, -1.0, -1.0]
+    }
+  }
 }
