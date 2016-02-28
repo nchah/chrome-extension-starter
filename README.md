@@ -57,6 +57,7 @@ This is a directory tree of links to various Chrome developer pages.
 - popup.js
 
 ### theme-template
+Documentation on creating themes is a bit limited so referencing the Chromium (which Chrome is built on) source is helpful https://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/themes/
 - manifest.json
 - images
 
