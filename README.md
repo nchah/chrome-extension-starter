@@ -1,4 +1,6 @@
 # chrome-extension-starter
+A starter kit for chrome extension development.
+
 
 ## Official Documentation
 This is a directory tree of links to various Chrome developer pages. 
@@ -60,4 +62,13 @@ This is a directory tree of links to various Chrome developer pages.
 Documentation on creating themes is a bit limited so referencing the Chromium (which Chrome is built on) source is helpful https://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/themes/
 - manifest.json
 - images
+
+
+## Samples
+
+### theme-dark-v1
+
+The published [Dark Theme - Charcoal](https://chrome.google.com/webstore/detail/dark-theme-charcoal/bookmfpildhgmigenbeeonhljjbgfple) is available on the Chrome Web Store.
+
+![charcoal-screenshot.png](/images/charcoal-screenshot.png?raw=true)
 
