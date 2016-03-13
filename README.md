@@ -72,3 +72,10 @@ The published [Dark Theme - Charcoal](https://chrome.google.com/webstore/detail/
 
 ![charcoal-screenshot.png](/images/charcoal-screenshot.png?raw=true)
 
+
+### theme-unicorn-v1
+
+The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-theme/cmocghjdibclgmdlkmmdpinlmfandkfh) is available on the Chrome Web Store.
+
+![unicorn-theme-screenshot.png](/images/unicorn-theme-screenshot.png?raw=true)
+
