@@ -70,7 +70,7 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 
 The published [Dark Theme - Charcoal](https://chrome.google.com/webstore/detail/dark-theme-charcoal/bookmfpildhgmigenbeeonhljjbgfple) is available on the Chrome Web Store.
 
-![charcoal-theme-screenshot.png](/images/charcoal-screenshot.png?raw=true)
+![charcoal-theme-screenshot.png](/images/charcoal-theme-screenshot.png?raw=true)
 
 
 ### theme-unicorn-v1
