@@ -1,5 +1,5 @@
 # chrome-extension-starter
-A starter kit for chrome extension development.
+A starter kit for Chrome extension and theme development.
 
 
 ## Official Documentation
