@@ -1,8 +1,15 @@
 # chrome-extension-starter
+
 A starter kit for Chrome extension and theme development.
 
+## Google Groups
+
+- [Chromium-Extensions-Announce](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-extensions)
+- [Chromium-Apps-Announce](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-apps)
+- [Other Chromium group links](https://www.chromium.org/developers/discussion-groups)
 
 ## Official Documentation
+
 This is a directory tree of links to various Chrome developer pages. 
 
 - [Extensions](https://developer.chrome.com/extensions)
