@@ -55,17 +55,27 @@ This is a directory tree of links to various Chrome developer pages.
         - [Google Groups](https://groups.google.com/a/chromium.org/forum/#!forum/chromium-extensions)
         - [Stack Overflow](http://stackoverflow.com/tags/google-chrome-extension/info)
 
+## Developing
+
+The official documentation is quite extensive and up to date. Some recommendations:
+
+- The tutorials and docs to guide the learning process for developing extensions is ordered logically in a top down format. Start at the top and drill into details as you move down.
+- The [Sample Extensions](https://developer.chrome.com/extensions/samples) page is a great resource that provides many working extension examples. The main page is a long list so it's best to choose a few of the Chrome APIs you would like to work with and narrow down the search.
+
+
 
 ## Folders
 
 
 ### app-template
+
 - manifest.json
 - icon.png
 - popup.html
 - popup.js
 
 ### theme-template
+
 Documentation on creating themes is a bit limited so referencing the Chromium (which Chrome is built on) source is helpful https://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/themes/
 - manifest.json
 - images
