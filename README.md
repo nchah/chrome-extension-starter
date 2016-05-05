@@ -67,8 +67,14 @@ The official documentation is quite extensive and up to date. Some recommendatio
 ## Folders
 
 
-### app-template
+### ext-samples
 
+- [magic8ball](https://developer.chrome.com/extensions/samples#search:topsites) - A sample for creating New Tab extensions.
+- 
+
+### ext-template
+
+General template for Chrome extensions.
 - manifest.json
 - icon.png
 - popup.html
