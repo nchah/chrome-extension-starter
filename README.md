@@ -70,6 +70,7 @@ The official documentation is quite extensive and up to date. Some recommendatio
 ### ext-samples
 
 - [magic8ball](https://developer.chrome.com/extensions/samples#search:topsites) - A sample for creating New Tab extensions.
+- [gmail](https://developer.chrome.com/extensions/samples#search:mail) - A sample for Google Mail Checker.
 
 
 ### ext-template
