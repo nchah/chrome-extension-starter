@@ -69,9 +69,11 @@ The official documentation is quite extensive and up to date. Some recommendatio
 
 ### ext-samples
 
-- [magic8ball](https://developer.chrome.com/extensions/samples#search:topsites) - A sample for creating New Tab extensions.
-- [gmail](https://developer.chrome.com/extensions/samples#search:mail) - A sample for Google Mail Checker.
-- [basic-bookmarks](https://developer.chrome.com/extensions/samples#search:bookmarks) - A sample using the Bookmarks API.
+All extension samples (as zip files) are available [here](https://developer.chrome.com/extensions/samples). A few that I found useful are included in the ext-samples folder.
+
+- [NTP prototyping extension (magic8ball)](https://developer.chrome.com/extensions/samples#search:topsites) - A sample for creating New Tab extensions.
+- [Google Mail Checker (gmail)](https://developer.chrome.com/extensions/samples#search:mail) - A sample for Google Mail Checker.
+- [My Bookmarks (basic-bookmarks)](https://developer.chrome.com/extensions/samples#search:bookmarks) - A sample using the Bookmarks API.
 
 ### ext-template
 
