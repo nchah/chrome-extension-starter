@@ -74,6 +74,9 @@ All extension samples (as zip files) are available [here](https://developer.chro
 - [NTP prototyping extension (magic8ball)](https://developer.chrome.com/extensions/samples#search:topsites) - A sample for creating New Tab extensions. (topSites)
 - [Google Mail Checker (gmail)](https://developer.chrome.com/extensions/samples#search:mail) - A sample for Google Mail Checker. (alarms, browserAction, i18n, runtime, tabs, webNavigation, windows)
 - [My Bookmarks (basic-bookmarks)](https://developer.chrome.com/extensions/samples#search:bookmarks) - A sample using the Bookmarks API. (bookmarks, tabs)
+- [Sample Extension Commands extension (commands)](https://developer.chrome.com/extensions/samples#search:commands) - A sample to open the browser action popup or send an event (commands)
+- [Context Menus Sample (basic-context)](https://developer.chrome.com/extensions/samples#search:contextmenus) - A sample for basic features (contextMenus, extension)
+- [Imageinfo (imageinfo)](https://developer.chrome.com/extensions/samples#search:contextmenus) - A sample to get image info for images, including EXIF data (contextMenus, tabs, windows)
 
 
 ### ext-template
