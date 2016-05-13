@@ -69,14 +69,21 @@ The official documentation is quite extensive and up to date. Some recommendatio
 
 ### ext-samples
 
-All extension samples (as zip files) are available [here](https://developer.chrome.com/extensions/samples). A few that I found useful are included in the ext-samples folder. The API calls used in each sample are noted in parentheses.
+All extension samples (as zip files) are available on the [samples](https://developer.chrome.com/extensions/samples) page. A few that I found useful are included (unzipped) in the ext-samples folder. The API calls used in each sample are noted in parentheses.
 
-- [NTP prototyping extension (magic8ball)](https://developer.chrome.com/extensions/samples#search:topsites) - A sample for creating New Tab extensions. (topSites)
-- [Google Mail Checker (gmail)](https://developer.chrome.com/extensions/samples#search:mail) - A sample for Google Mail Checker. (alarms, browserAction, i18n, runtime, tabs, webNavigation, windows)
-- [My Bookmarks (basic-bookmarks)](https://developer.chrome.com/extensions/samples#search:bookmarks) - A sample using the Bookmarks API. (bookmarks, tabs)
-- [Sample Extension Commands extension (commands)](https://developer.chrome.com/extensions/samples#search:commands) - A sample to open the browser action popup or send an event (commands)
-- [Context Menus Sample (basic-context)](https://developer.chrome.com/extensions/samples#search:contextmenus) - A sample for basic features (contextMenus, extension)
-- [Imageinfo (imageinfo)](https://developer.chrome.com/extensions/samples#search:contextmenus) - A sample to get image info for images, including EXIF data (contextMenus, tabs, windows)
+- [NTP prototyping extension (magic8ball)](https://developer.chrome.com/extensions/samples#search:topsites) - An extension for creating New Tab extensions. (topSites)
+- [Google Mail Checker (gmail)](https://developer.chrome.com/extensions/samples#search:mail) - An extension for Google Mail Checker. (alarms, browserAction, i18n, runtime, tabs, webNavigation, windows)
+- [My Bookmarks (basic-bookmarks)](https://developer.chrome.com/extensions/samples#search:bookmarks) - An extension using the Bookmarks API. (bookmarks, tabs)
+- [Sample Extension Commands extension (commands)](https://developer.chrome.com/extensions/samples#search:commands) - An extension to open the browser action popup or send an event. (commands)
+- [Context Menus Sample (basic-context)](https://developer.chrome.com/extensions/samples#search:contextmenus) - An extension for basic features. (contextMenus, extension)
+- [Imageinfo (imageinfo)](https://developer.chrome.com/extensions/samples#search:contextmenus) - An extension to get image info for images, including EXIF data. (contextMenus, tabs, windows)
+- [JavaScript pause/resume (js-pause-resume)](https://developer.chrome.com/extensions/samples#search:debugger) - An extension to pause/resume JavaScript execution. (browserAction, debugger, runtime) 
+- [Desktop Capture Example (desktop-capture)](https://developer.chrome.com/extensions/samples#search:desktopcapture) - An extension that shows desktop media picker UI. (desktopCapture, runtime)
+- [Download Selected Links (download-links)](https://developer.chrome.com/extensions/samples#search:downloads) - An extension that allows selecting links on a page and downloading them. (downloads, extension, tabs, windows)
+- [Omnibox Example (simple-omnibox)](https://developer.chrome.com/extensions/samples#search:omnibox) - An extension where user can type 'omnix' plus a search term into the Omnibox. (omnibox)
+- [Keep Awake (power)](https://developer.chrome.com/extensions/samples#search:power) - An extension to override system power-saving settings. (browserAction, i18n, power, runtime, storage)
+- [A browser action with a popup that changes the page color (set-page-color)](https://developer.chrome.com/extensions/samples#search:tabs) - An extension that changes the current page color. (tabs)
+- [Stylizr (stylizr)](https://developer.chrome.com/extensions/samples#search:tabs) - An extension to change pages with custom CSS. (extension, runtime, storage, tabs)
 
 
 ### ext-template
