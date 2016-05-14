@@ -124,3 +124,8 @@ The following themes are not yet on the Chrome Web Store:
 - theme-green-mint-v1
 - theme-blue-mint-v1
 
+## Stats
+
+The developer dashboard in the Chrome Web Store allows for easy tracking of extensions and themes. It is possible to download a CSV dump of all stats to date for each application.
+
+
