@@ -101,7 +101,7 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 - images
 
 
-## Samples
+## Published Samples
 
 ### theme-dark-v1
 
@@ -109,13 +109,11 @@ The published [Dark Theme - Charcoal](https://chrome.google.com/webstore/detail/
 
 ![charcoal-theme-screenshot.png](/images/charcoal-theme-screenshot.png?raw=true)
 
-
 ### theme-unicorn-v1
 
 The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-theme/cmocghjdibclgmdlkmmdpinlmfandkfh) is available on the Chrome Web Store.
 
 ![unicorn-theme-screenshot.png](/images/unicorn-theme-screenshot.png?raw=true)
-
 
 ### Not Launched
 
@@ -123,6 +121,7 @@ The following themes are not yet on the Chrome Web Store:
 - theme-google-pastel
 - theme-green-mint-v1
 - theme-blue-mint-v1
+
 
 ## Stats
 
