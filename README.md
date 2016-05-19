@@ -115,6 +115,11 @@ The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-
 
 ![unicorn-theme-screenshot.png](/images/unicorn-theme-screenshot.png?raw=true)
 
+### ext-darkedit-ntp
+
+The published Dark New Tab extension.
+
+
 ### Not Launched
 
 The following themes are not yet on the Chrome Web Store:
