@@ -1,0 +1,14 @@
+{
+  "name": "Dark New Tab",
+  "version": "1.0",
+  "description": "A lightweight Chrome New Tab extension in a dark theme, with an editable text area.",
+  "chrome_url_overrides" : {
+    "newtab": "newTab.html"
+  },
+  "permissions": [],
+  "manifest_version": 2,
+  "icons": {
+  	"16": "icon.png",
+  	"128": "icon.png"
+  }
+}

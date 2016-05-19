@@ -1,0 +1,16 @@
+/* Minimalist styling */
+
+html {
+  background-color: #404040;
+}
+
+#text-area {
+  background-color: #404040; 
+  border: none;
+  outline: none;
+  width: 100%;
+
+  font-size: 14px; 
+  font-family: monospace; 
+  color: white; 
+}
