@@ -1,5 +1,5 @@
 {
-  "name": "Dark New Tab",
+  "name": "DarkEdit New Tab",
   "version": "1.0",
   "description": "A lightweight Chrome New Tab extension in a dark theme, with an editable text area.",
   "chrome_url_overrides" : {
