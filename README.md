@@ -117,8 +117,9 @@ The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-
 
 ### ext-darkedit-ntp
 
-The published Dark New Tab extension.
+The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darkedit-new-tab/lcjehgmglbjnagbdcbobefdbpeippiig) extension is available on the Chrome Web store.
 
+![darkedit-ntp-screenshot.png](/ext-darkedit-ntp/darkedit-ntp-screenshot.png?raw=true)
 
 ### Not Launched
 
