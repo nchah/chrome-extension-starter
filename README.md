@@ -120,9 +120,18 @@ The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-
 ### ext-darkedit-ntp
 *~12 users*
 
-The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darkedit-new-tab/lcjehgmglbjnagbdcbobefdbpeippiig) extension is available on the Chrome Web store.
+The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darkedit-new-tab/lcjehgmglbjnagbdcbobefdbpeippiig) extension is available on the Chrome Web Store.
 
-![darkedit-ntp-screenshot.png](/ext-darkedit-ntp/darkedit-ntp-screenshot.png?raw=true)
+![darkedit-ntp-screenshot.png](/images/darkedit-ntp-screenshot.png?raw=true)
+
+### ext-newtab-memo
+
+The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
+
+![newtab-memo-screenshot-1.png](/images/newtab-memo-screenshot-1.png?raw=true)
+
+![newtab-memo-screenshot-2.png](/images/newtab-memo-screenshot-2.png?raw=true)
+
 
 ### Not Launched
 
