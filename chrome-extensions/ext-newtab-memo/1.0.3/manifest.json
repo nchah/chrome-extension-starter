@@ -1,7 +1,7 @@
 {
   "name": "NewTab Memo",
-  "version": "1.0.2",
-  "description": "Transforms new tabs into memopads. Type, edit, and save.",
+  "version": "1.0.3",
+  "description": "Transforms Chrome new tabs into memopads. Type, edit, and save text.",
   "chrome_url_overrides" : {
     "newtab": "newTab.html"
   },

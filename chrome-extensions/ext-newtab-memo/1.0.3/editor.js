@@ -8,9 +8,9 @@
 var storage = chrome.storage.local;
 
 var textarea = document.querySelector('textarea');
-var resetTextButton = document.querySelector('button.resetText');
-var saveTextButton = document.querySelector('button.saveText');
-var optionsButton = document.querySelector('button.optionsPage');
+var resetTextButton = document.querySelector('img.resetText');
+var saveTextButton = document.querySelector('img.saveText');
+var optionsButton = document.querySelector('img.optionsPage');
 
 loadChanges();
 loadOptionChanges();
@@ -19,12 +19,22 @@ optionsButton.addEventListener('click', openOptions);
 saveTextButton.addEventListener('click', saveChanges);
 resetTextButton.addEventListener('click', resetChanges);
 
+// keymaster.js ctrl+s save shortcut
+key('ctrl+s', function(){
+  var text = textarea.value;
+  if (!text) {
+    alert("No text to save.");
+  }
+  else if (text) {
+    storage.set({'txt': text});
+  }})
+
 
 function saveChanges() {
   var text = textarea.value;
 
   if (!text) {
-    alert("No text to save.")
+    alert("No text to save.");
   }
   else if (text) {
     storage.set({'txt': text});
@@ -46,6 +56,7 @@ function loadChanges() {
 
   adjustViewSize();
 }
+
 
 function openOptions() {
   if (chrome.runtime.openOptionsPage) {
