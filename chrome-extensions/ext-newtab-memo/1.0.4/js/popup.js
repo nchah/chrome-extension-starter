@@ -7,7 +7,7 @@
 
 var storage = chrome.storage.local;
 
-var optionsButton2 = document.querySelector('button.optionsPage2');
+var optionsButton2 = document.querySelector('img.optionsPage2');
 
 optionsButton2.addEventListener('click', openOptions);
 
