@@ -1,6 +1,7 @@
 # Changelog
 
 ## Sample To Do List
+
 To Do List:
 1. Make a To Do List ✔
 2. Check off the first thing on the To Do list ✔
@@ -9,16 +10,16 @@ To Do List:
 
 ## TODOs
 
-### Bug
+### Bugs
 - adjust CSS save settings, allow adjusting 1 by 1
 - better method to calculate textarea row v. font adjustment formula
 
-### Feature Request
+### Feature Requests
 - DONE v1.0.3 - update button shapes, icons to material design
 - DONE v1.0.3, 1.0.4 - implement Ctrl+S keyboard shortcut, use https://developer.chrome.com/extensions/commands
 - implement auto-save
 - customize number of cols. of text in options
-- implement themes with preset options
+- DONE v1.0.4 - implement themes with preset options
 - allow more fonts https://developers.google.com/fonts/docs/getting_started
 
 
@@ -26,7 +27,8 @@ To Do List:
 
 v1.0.4
 - Added Alt text to all buttons: Save, Reset, Settings
-- Updated Popup page options icon to material design style.
+- Updated Popup page options icon to material design style
+- Added new curated themes on Options page, adjusted page format
 
 v1.0.3
 - Updated to material design icons and removed text buttons on new tabs

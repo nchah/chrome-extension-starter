@@ -19,16 +19,6 @@ optionsButton.addEventListener('click', openOptions);
 saveTextButton.addEventListener('click', saveChanges);
 resetTextButton.addEventListener('click', resetChanges);
 
-//// keymaster.js ctrl+s save shortcut
-// key('ctrl+s', function(){
-//   var text = textarea.value;
-//   if (!text) {
-//     alert("No text to save.");
-//   }
-//   else if (text) {
-//     storage.set({'txt': text});
-//   }})
-
 chrome.commands.onCommand.addListener(function(save_changes) {
   var text = textarea.value;
   if (!text) {

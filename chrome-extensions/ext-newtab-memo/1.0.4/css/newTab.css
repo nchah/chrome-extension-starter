@@ -19,8 +19,29 @@ h2 {
 }
 
 h3 {
-	color: white;
+	color: #80ff80;
 	font-family: Monaco, monospace;
+	line-height: 2px;
+}
+
+select {
+    width: 100px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+input[type=text] {
+    width: 15;
+    padding: 1px 2px;
+    margin: 2px 0;
+    box-sizing: border-box;
+}
+
+#sub-title {
+	color: silver; 
+	font-style: italic;
 }
 
 #text-area {
@@ -32,6 +53,10 @@ h3 {
 	font-size: 12px; 
 	font-family: monospace; 
 	color: white; 
+}
+
+#hr-line {
+	color: gray;
 }
 
 #button1 {
