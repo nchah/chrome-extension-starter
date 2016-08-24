@@ -128,7 +128,7 @@ The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darke
 
 The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
 
-![newtab-memo-screenshot-1.png](/images/newtab-memo-screenshot-1.png?raw=true)
+![newtab-memo-screenshot-3.png](/images/newtab-memo-screenshot-3.png?raw=true)
 
 ![newtab-memo-screenshot-2.png](/images/newtab-memo-screenshot-2.png?raw=true)
 
