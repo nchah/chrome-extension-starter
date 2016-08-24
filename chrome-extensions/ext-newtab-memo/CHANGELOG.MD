@@ -16,7 +16,7 @@ To Do List:
 
 ### Feature Requests
 - DONE v1.0.3 - update button shapes, icons to material design
-- DONE v1.0.3, 1.0.4 - implement Ctrl+S keyboard shortcut, use https://developer.chrome.com/extensions/commands
+- DONE v1.0.3, 1.0.4, 1.0.5 - implement Ctrl+Shift+S keyboard shortcut, use https://developer.chrome.com/extensions/commands
 - implement auto-save
 - customize number of cols. of text in options
 - DONE v1.0.4 - implement themes with preset options
@@ -25,9 +25,11 @@ To Do List:
 
 ## Versions
 
+V1.0.6
+
+
 v1.0.5
-
-
+- Hot fix: Ctrl + Shift + S save keyboard shortcut
 
 v1.0.4
 - Added Alt text to all buttons: Save, Reset, Settings
