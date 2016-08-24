@@ -25,6 +25,10 @@ To Do List:
 
 ## Versions
 
+v1.0.5
+
+
+
 v1.0.4
 - Added Alt text to all buttons: Save, Reset, Settings
 - Updated Popup page options icon to material design style
