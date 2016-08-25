@@ -20,7 +20,6 @@ saveTextButton.addEventListener('click', saveChanges);
 resetTextButton.addEventListener('click', resetChanges);
 
 autosaveChanges();
-// var interval = window.setInterval()
 
 // Experimental: autosave
 function autosaveChanges() {
@@ -28,11 +27,9 @@ function autosaveChanges() {
     if (items.autosave == 'yes') {
       var interval = window.setInterval(function() {
         var text = textarea.value;
-        if (!text) {
-          alert("No text to save.");
-        } else if (text) {
+        if (text) {
           storage.set({'txt': text});
-        }
+        } 
       }, 1000);
     }
   })

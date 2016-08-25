@@ -8,11 +8,18 @@ var storage = chrome.storage.local;
 
 var form = document.querySelector("form");
 var restoreDefaultsButton = document.querySelector('button.restoreDefaults');
-
 form.addEventListener('submit', saveSettings);
 restoreDefaultsButton.addEventListener('click', restoreDefaults);
 
 loadOptions();
+
+
+// Testing save of css 1 by 1
+storage.get('css', function(items) {
+  var existingCSS = items.css.split(';', 4);
+
+});
+
 
 function loadOptions() {
   storage.get('autosave', function(items) {
@@ -122,4 +129,3 @@ function saveSettings() {
     storage.set({'css': newCSSTheme});
   }
 }
-
