@@ -12,6 +12,17 @@ var restoreDefaultsButton = document.querySelector('button.restoreDefaults');
 form.addEventListener('submit', saveSettings);
 restoreDefaultsButton.addEventListener('click', restoreDefaults);
 
+loadOptions();
+
+function loadOptions() {
+  storage.get('autosave', function(items) {
+    if (items.autosave == 'yes') {
+      document.getElementById('autosave').checked = true;
+    } else if (items.autosave != 'yes') {
+      document.getElementById('autosave').checked = false;
+    }
+  })
+}
 
 function restoreDefaults() {
   storage.remove('css');
@@ -22,6 +33,15 @@ function saveSettings() {
   // Setting variables for CSS elements
   // Choosing between the drop down or the custom input where needed
   
+  // ** Experimental: autosave
+  var autosave = form.elements.autosave.value;
+  var autosave = document.getElementById('autosave').checked;
+  if (autosave) {
+    storage.set({'autosave': 'yes'});
+  } else if (!autosave) {
+    storage.set({'autosave': 'no'});
+  }
+
   // New background color
   var newBackgroundColor1 = form.elements.bgColorCustom.value;
   var newBackgroundColor2 = form.elements.bgColorSelect.value;

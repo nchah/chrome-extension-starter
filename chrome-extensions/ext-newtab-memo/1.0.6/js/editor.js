@@ -19,6 +19,26 @@ optionsButton.addEventListener('click', openOptions);
 saveTextButton.addEventListener('click', saveChanges);
 resetTextButton.addEventListener('click', resetChanges);
 
+autosaveChanges();
+// var interval = window.setInterval()
+
+// Experimental: autosave
+function autosaveChanges() {
+  storage.get('autosave', function(items) {
+    if (items.autosave == 'yes') {
+      var interval = window.setInterval(function() {
+        var text = textarea.value;
+        if (!text) {
+          alert("No text to save.");
+        } else if (text) {
+          storage.set({'txt': text});
+        }
+      }, 1000);
+    }
+  })
+}
+
+// Keyboard short: Ctrl+Shift+S to save text
 chrome.commands.onCommand.addListener(function(save_changes) {
   var text = textarea.value;
   if (!text) {

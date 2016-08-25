@@ -17,7 +17,7 @@ To Do List:
 ### Feature Requests
 - DONE v1.0.3 - update button shapes, icons to material design
 - DONE v1.0.3, 1.0.4, 1.0.5 - implement Ctrl+Shift+S keyboard shortcut, use https://developer.chrome.com/extensions/commands
-- implement auto-save
+- DONE v1.0.6 - implement autosave
 - customize number of cols. of text in options
 - DONE v1.0.4 - implement themes with preset options
 - allow more fonts https://developers.google.com/fonts/docs/getting_started
@@ -26,7 +26,8 @@ To Do List:
 ## Versions
 
 V1.0.6
-
+- Minor bug with popup page text overlap
+- Implemented autosave of text as experimental option
 
 v1.0.5
 - Hot fix: Ctrl + Shift + S save keyboard shortcut
