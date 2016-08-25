@@ -25,7 +25,11 @@ To Do List:
 
 ## Versions
 
-V1.0.6
+v1.0.7
+
+
+
+v1.0.6
 - Minor bug with popup page text overlap
 - Implemented autosave of text as experimental option
 
