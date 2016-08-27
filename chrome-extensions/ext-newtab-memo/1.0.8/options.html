@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+	<html>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/newTab.css">
+		<title>NewTab Memo - Options</title>
+		<body>
+			<h2>&nbsp;NewTab Memo Options</h2>
+			<form id="settings">
+			<table border="0" cellpadding="5">
+				<tr>
+					<td><h3>&nbsp;> Curated Themes</h3>
+					<p id="sub-title">Choose from a set of curated themes.</p></td>
+				</tr>
+				<tr>
+					<td>Themes:</td>
+					<td>
+						<select name="themeSelect">
+							<option value=''></option>
+							<option value='Dark Default'>Dark Default</option>
+							<option value='Rosy Rose'>Rosy Rose</option>
+							<option value='Baby Blue'>Baby Blue</option>
+							<option value='Light Lavender'>Light Lavender</option>
+							<option value='Lush Lime'>Lush Lime</option>
+							<option value='Orange Ochre'>Orange Ochre</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><h3>&nbsp;> Detailed Options</h3>
+					<p id="sub-title">Or adjust each option one by one.</p></td>
+				</tr>
+				<tr>
+					<td>Background Color: </td>
+					<td>
+						<input type="text" name="bgColorCustom" size="15" placeholder="#HEX color">
+						or 
+						<select name="bgColorSelect">
+							<option value=''></option>
+							<option value='#404040'>Dark Default</option>
+							<option value='white'>White</option>
+							<option value='silver'>Silver</option>
+							<option value='gray'>Gray</option>
+							<option value='black'>Black</option>
+							<option value='red'>Red</option>
+							<option value='maroon'>Maroon</option>
+							<option value='yellow'>Yellow</option>
+							<option value='olive'>Olive</option>
+							<option value='lime'>Lime</option>
+							<option value='green'>Green</option>
+							<option value='aqua'>Aqua</option>
+							<option value='teal'>Teal</option>
+							<option value='blue'>Blue</option>
+							<option value='navy'>Navy</option>
+							<option value='fuchsia'>Fuchsia</option>
+							<option value='purple'>Purple</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Text Color: </td>
+					<td>
+						<input type="text" name="textColorCustom" size="15" placeholder="#HEX color"> 
+						or 
+						<select name="textColorSelect">
+							<option value=''></option>
+							<option value='#404040'>Dark Default</option>
+							<option value='white'>White</option>
+							<option value='silver'>Silver</option>
+							<option value='gray'>Gray</option>
+							<option value='black'>Black</option>
+							<option value='red'>Red</option>
+							<option value='maroon'>Maroon</option>
+							<option value='yellow'>Yellow</option>
+							<option value='olive'>Olive</option>
+							<option value='lime'>Lime</option>
+							<option value='green'>Green</option>
+							<option value='aqua'>Aqua</option>
+							<option value='teal'>Teal</option>
+							<option value='blue'>Blue</option>
+							<option value='navy'>Navy</option>
+							<option value='fuchsia'>Fuchsia</option>
+							<option value='purple'>Purple</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Font Family: 
+					<!-- <br>or choose from <a href="https://fonts.google.com/" style="color: white; font-style: italic;">Google Fonts</a></td> -->
+					<td>
+						<input type="text" name="ftFamilyCustom" size="15">
+						or
+						<select name="ftFamilySelect">
+							<option value=''></option>
+							<option value='monospace'>Monospace</option>
+							<option value='serif'>Serif</option>
+							<option value='sans-serif'>Sans-Serif</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Font Size: </td>
+					<td>
+						<input type="text" name="ftSize" size="15">
+					</td>
+				</tr>
+				<tr>
+					<td><h3>&nbsp;> Experimental</h3>
+					<p id="sub-title">These options are under development.</p></td>
+				</tr>
+				<tr>
+					<td>Autosave:</td>
+					<td>
+						On <input type="checkbox" id="autosave" name="autosave" value="yes">
+					</td>
+				</tr>
+			</table>
+			<br>
+			<!-- Buttons -->
+			<button type="submit" class="saveSize" id="button1">Save</button>
+			<button class="restoreDefaults" id="button1">Restore Defaults</button>
+			</form>
+
+			<script src="js/options.js"></script>
+		</body>
+</html>

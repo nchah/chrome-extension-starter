@@ -26,6 +26,9 @@ To Do List:
 
 ## Versions
 
+v1.0.8
+
+
 v1.0.7
 - Popup page extension title text overlap fixed, missed in v1.0.6
 - Adjust CSS save settings, allow adjusting 1 by 1
