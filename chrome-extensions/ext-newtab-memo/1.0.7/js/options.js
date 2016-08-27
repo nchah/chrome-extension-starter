@@ -16,7 +16,9 @@ loadOptions();
 
 // Testing save of css 1 by 1
 storage.get('css', function(items) {
-  var existingCSS = items.css.split(';', 4);
+  var existingCSS = items.css.split(';', 4); // limit to the 4 CSS options for now
+  // Ex: background-color: #ffcccc, color: maroon, font-family: monospace, font-size: 14px
+  // alert(existingCSS[0]);
 
 });
 
