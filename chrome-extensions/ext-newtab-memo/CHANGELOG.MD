@@ -26,7 +26,7 @@ To Do List:
 ## Versions
 
 v1.0.7
-
+- More themes
 
 
 v1.0.6
