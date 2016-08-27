@@ -11,7 +11,7 @@ To Do List:
 ## TODOs
 
 ### Bugs
-- adjust CSS save settings, allow adjusting 1 by 1
+- DONE v1.0.7 - adjust CSS save settings, allow adjusting 1 by 1
 - better method to calculate textarea row v. font adjustment formula
 - DONE v1.0.7 - popup page title text overlap fixed
 
@@ -28,6 +28,7 @@ To Do List:
 
 v1.0.7
 - Popup page extension title text overlap fixed, missed in v1.0.6
+- Adjust CSS save settings, allow adjusting 1 by 1
 
 v1.0.6
 - Minor bug with popup page text overlap

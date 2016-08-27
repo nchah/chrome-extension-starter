@@ -14,15 +14,6 @@ restoreDefaultsButton.addEventListener('click', restoreDefaults);
 loadOptions();
 
 
-// Testing save of css 1 by 1
-storage.get('css', function(items) {
-  var existingCSS = items.css.split(';', 4); // limit to the 4 CSS options for now
-  // Ex: background-color: #ffcccc, color: maroon, font-family: monospace, font-size: 14px
-  // alert(existingCSS[0]);
-
-});
-
-
 function loadOptions() {
   storage.get('autosave', function(items) {
     if (items.autosave == 'yes') {
@@ -39,9 +30,6 @@ function restoreDefaults() {
 }
 
 function saveSettings() {
-  // Setting variables for CSS elements
-  // Choosing between the drop down or the custom input where needed
-  
   // ** Experimental: autosave
   var autosave = form.elements.autosave.value;
   var autosave = document.getElementById('autosave').checked;
@@ -51,68 +39,15 @@ function saveSettings() {
     storage.set({'autosave': 'no'});
   }
 
-  // New background color
-  var newBackgroundColor1 = form.elements.bgColorCustom.value;
-  var newBackgroundColor2 = form.elements.bgColorSelect.value;
-  if (newBackgroundColor1) {
-    newBackgroundColor = newBackgroundColor1;
-  } else {
-    newBackgroundColor = newBackgroundColor2;
-  }
-
-  // New text color
-  var newTextColor1 = form.elements.textColorCustom.value;
-  var newTextColor2 = form.elements.textColorSelect.value;
-  if (newTextColor1) {
-    newTextColor = newTextColor1;
-  } else {
-    newTextColor = newTextColor2;
-  }
-
-  // New font
-  var newFontFamily1 = form.elements.ftFamilyCustom.value;
-  var newFontFamily2 = form.elements.ftFamilySelect.value;
-  if (newFontFamily1) {
-    newFontFamily = newFontFamily1;
-  } else {
-    newFontFamily = newFontFamily2;
-  }
-
-  // New font size
-  var newFontSize = form.elements.ftSize.value + "px";
-
-  // Combine all updates into single CSS statement
-  var newCSS = 'background-color: ' + newBackgroundColor + ';' + 
-               'color: ' + newTextColor + ';' +
-               'font-family: ' + newFontFamily + ';' +
-               'font-size: ' + newFontSize + ';';
-
-  // Or apply a new curated theme of styles
+  // Apply a new curated theme of styles 
   var newTheme = form.elements.themeSelect.value;
-
-  // Storing CSS options
-  if (newBackgroundColor.length > 0
-      || newTextColor.length > 0
-      || newFontFamily.length > 0
-      || newFontSize.length - 2 > 0
-      && newTheme.length == 0) {
-    chrome.tabs.insertCSS({code: newCSS}, function() { 
-      alert('Updated: ' + '\n' +
-            '- Background Color: ' + newBackgroundColor + '\n' +
-            '- Text Color: ' + newTextColor + '\n' +
-            '- Font Family: ' + newFontFamily + '\n' + 
-            '- Font Size: ' + form.elements.ftSize.value + '\n' +
-            '- Theme: ' + newTheme + '\n'
-            )});
-    storage.set({'css': newCSS});
-  } 
-  else if (newTheme.length > 0) {
+  if (newTheme.length > 0) {
     switch (newTheme) {
       case 'Dark Default':
         newCSSTheme = 'background-color: #404040; color: white; font-family: monospace; font-size: 14px;';
         break;
       case 'Rosy Rose':
-        newCSSTheme = 'background-color: #ffcccc; color: maroon; font-family: monospace; font-size: 14px;';
+        newCSSTheme = 'background-color: #ffcccc; color: maroon; font-family: ; font-size: ;';
         break;
       case 'Baby Blue':
         newCSSTheme = 'background-color: #99ccff; color: navy; font-family: monospace; font-size: 14px;';
@@ -129,5 +64,84 @@ function saveSettings() {
     }
     chrome.tabs.insertCSS({code: newCSSTheme}, alert('Updated to theme: ' + newTheme));
     storage.set({'css': newCSSTheme});
+  }
+
+  // Setting variables for CSS elements; Choosing between dropdown or input where needed
+  // * New background color
+  var newBackgroundColor1 = form.elements.bgColorCustom.value;
+  var newBackgroundColor2 = form.elements.bgColorSelect.value;
+  if (newBackgroundColor1) {
+    newBackgroundColor = newBackgroundColor1;
+  } else {
+    newBackgroundColor = newBackgroundColor2;
+  }
+  // * New text color
+  var newTextColor1 = form.elements.textColorCustom.value;
+  var newTextColor2 = form.elements.textColorSelect.value;
+  if (newTextColor1) {
+    newTextColor = newTextColor1;
+  } else {
+  newTextColor = newTextColor2;
+  }
+  // * New font family
+  var newFontFamily1 = form.elements.ftFamilyCustom.value;
+  var newFontFamily2 = form.elements.ftFamilySelect.value;
+  if (newFontFamily1) {
+    newFontFamily = newFontFamily1;
+  } else {
+    newFontFamily = newFontFamily2;
+  }
+  // * New font size
+  var newFontSize = form.elements.ftSize.value + "px";
+
+  // Storing CSS option changes
+  if (newBackgroundColor.length > 0
+      || newTextColor.length > 0
+      || newFontFamily.length > 0
+      || newFontSize.length - 2 > 0
+      && newTheme.length == 0) {
+
+    // Getting existing CSS settings
+    storage.get('css', function(items) {
+      var existingCSS = items.css.split(';', 4); // limit to the 4 CSS options for now
+      // Ex: background-color: #ffcccc, color: maroon, font-family: monospace, font-size: 14px
+      var existingCSSBackgroundColor = existingCSS[0].split(':')[1];
+      var existingCSSTextColor = existingCSS[1].split(':')[1];
+      var existingCSSFontFamily = existingCSS[2].split(':')[1];
+      var existingCSSFontSize = existingCSS[3].split(':')[1];
+
+      // If no new value was set, preserve the existing CSS value
+      if (!newBackgroundColor) {
+        newBackgroundColor = existingCSSBackgroundColor;
+      }
+
+      if (!newTextColor) {
+        newTextColor = existingCSSTextColor;
+      }
+
+      if (!newFontFamily) {
+        newFontFamily = existingCSSFontFamily;
+      }
+
+      if (!newFontSize) {
+        newFontSize = existingCSSFontSize;
+      }
+
+      // Combine all updates into single CSS statement
+      var newCSS = 'background-color: ' + newBackgroundColor + '; ' + 
+                   'color: ' + newTextColor + '; ' +
+                   'font-family: ' + newFontFamily + '; ' +
+                   'font-size: ' + newFontSize + ';';
+
+      chrome.tabs.insertCSS({code: newCSS}, function() { 
+        alert('Updated: ' + '\n' +
+              '- Background Color: ' + newBackgroundColor + '\n' +
+              '- Text Color: ' + newTextColor + '\n' +
+              '- Font Family: ' + newFontFamily + '\n' + 
+              '- Font Size: ' + form.elements.ftSize.value + '\n' +
+              '- Theme: ' + newTheme + '\n'
+              )});
+      storage.set({'css': newCSS});
+    })
   }
 }
