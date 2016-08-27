@@ -27,7 +27,7 @@ To Do List:
 ## Versions
 
 v1.0.8
-
+- Implement more fonts, web fonts
 
 v1.0.7
 - Popup page extension title text overlap fixed, missed in v1.0.6
