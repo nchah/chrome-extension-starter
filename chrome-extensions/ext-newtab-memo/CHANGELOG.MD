@@ -1,18 +1,21 @@
 # Changelog
 
 ## Sample To Do List
+This is a simple To Do list included in some of the promotional screenshots.
 
 To Do List:
+
 1. Make a To Do List ✔
 2. Check off the first thing on the To Do list ✔
 3. Realize you've already accomplished two things on the To Do list ✔
 4. Reward yourself with a nap (in progress)
 
 ## TODOs
+Divided into Bugs (broken functionality) and Feature Requests (nice to have functionality).
 
 ### Bugs
 - DONE v1.0.7 - adjust CSS save settings, allow adjusting 1 by 1
-- better method to calculate textarea row v. font adjustment formula
+- better method to calculate textarea row v. font adjustment formula in text box
 - DONE v1.0.7 - popup page title text overlap fixed
 
 ### Feature Requests
