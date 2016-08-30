@@ -91,6 +91,13 @@ function saveSettings() {
   } else {
     newFontFamily = newFontFamily2;
   }
+  // ** Experimental: web fonts
+  var webFont = document.getElementById('fontFamilyWeb').value;
+  if (webFont) {
+    storage.set({'webFont': webFont});
+  }
+  newFontFamily = webFont;
+
   // * New font size
   var newFontSize = form.elements.fontSize.value + "px";
 

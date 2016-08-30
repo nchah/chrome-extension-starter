@@ -35,7 +35,7 @@ function autosaveChanges() {
   })
 }
 
-// Keyboard short: Ctrl+Shift+S to save text
+// Keyboard shortcut: Ctrl+Shift+S to save text
 chrome.commands.onCommand.addListener(function(save_changes) {
   var text = textarea.value;
   if (!text) {
@@ -92,6 +92,13 @@ function loadOptionChanges() {
       
       adjustViewSize();
     }
+  });
+  storage.get('webFont', function(items) {
+    // Experimental: web font
+    if (items.webFont)
+    document.getElementById("webFont").href = 'https://fonts.googleapis.com/css?family=' + items.webFont;
+    alert('https://fonts.googleapis.com/css?family=' + items.webFont);
+
   });
 }
 
