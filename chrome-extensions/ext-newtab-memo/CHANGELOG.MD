@@ -31,6 +31,7 @@ Divided into Bugs (broken functionality) and Feature Requests (nice to have func
 
 v1.0.8
 - Implemented more fonts through web fonts in options
+- Starting textarea size calculation, using line height
 
 v1.0.7
 - Popup page extension title text overlap fixed, missed in v1.0.6
