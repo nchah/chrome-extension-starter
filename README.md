@@ -104,7 +104,7 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 ## Published Samples
 
 ### theme-dark-v1
-*>500 users*
+*>450 users*
 
 The published [Dark Theme - Charcoal](https://chrome.google.com/webstore/detail/dark-theme-charcoal/bookmfpildhgmigenbeeonhljjbgfple) is available on the Chrome Web Store.
 
@@ -125,6 +125,7 @@ The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darke
 ![darkedit-ntp-screenshot.png](/images/darkedit-ntp-screenshot.png?raw=true)
 
 ### ext-newtab-memo
+*~12 users*
 
 The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
 
