@@ -81,18 +81,18 @@ function saveSettings() {
   if (newTextColor1) {
     newTextColor = newTextColor1;
   } else {
-  newTextColor = newTextColor2;
+    newTextColor = newTextColor2;
   }
   // * New font family
-  var newFontFamily1 = form.elements.ftFamilyCustom.value;
-  var newFontFamily2 = form.elements.ftFamilySelect.value;
+  var newFontFamily1 = form.elements.fontFamilyCustom.value;
+  var newFontFamily2 = form.elements.fontFamilySelect.value;
   if (newFontFamily1) {
     newFontFamily = newFontFamily1;
   } else {
     newFontFamily = newFontFamily2;
   }
   // * New font size
-  var newFontSize = form.elements.ftSize.value + "px";
+  var newFontSize = form.elements.fontSize.value + "px";
 
   // Storing CSS option changes
   if (newBackgroundColor.length > 0
