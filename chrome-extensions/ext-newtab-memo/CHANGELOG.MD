@@ -24,13 +24,13 @@ Divided into Bugs (broken functionality) and Feature Requests (nice to have func
 - DONE v1.0.6 - implement autosave
 - customize number of cols. of text in options
 - DONE v1.0.4 - implement themes with preset options
-- allow more fonts https://developers.google.com/fonts/docs/getting_started
+- DONE v1.0.8 - allow more fonts https://developers.google.com/fonts/docs/getting_started
 
 
 ## Versions
 
 v1.0.8
-- Implement more fonts, web fonts
+- Implemented more fonts through web fonts in options
 
 v1.0.7
 - Popup page extension title text overlap fixed, missed in v1.0.6

@@ -95,8 +95,8 @@ function saveSettings() {
   var webFont = document.getElementById('fontFamilyWeb').value;
   if (webFont) {
     storage.set({'webFont': webFont});
+    newFontFamily = webFont;
   }
-  newFontFamily = webFont;
 
   // * New font size
   var newFontSize = form.elements.fontSize.value + "px";
@@ -110,28 +110,28 @@ function saveSettings() {
 
     // Getting existing CSS settings
     storage.get('css', function(items) {
-      var existingCSS = items.css.split(';', 4); // limit to the 4 CSS options for now
-      // Ex: background-color: #ffcccc, color: maroon, font-family: monospace, font-size: 14px
-      var existingCSSBackgroundColor = existingCSS[0].split(':')[1];
-      var existingCSSTextColor = existingCSS[1].split(':')[1];
-      var existingCSSFontFamily = existingCSS[2].split(':')[1];
-      var existingCSSFontSize = existingCSS[3].split(':')[1];
 
-      // If no new value was set, preserve the existing CSS value
-      if (!newBackgroundColor) {
-        newBackgroundColor = existingCSSBackgroundColor;
-      }
+      if (items.css) {
+        var existingCSS = items.css.split(';', 4); // limit to the 4 CSS options for now
+        // Ex: background-color: #ffcccc, color: maroon, font-family: monospace, font-size: 14px
+        var existingCSSBackgroundColor = existingCSS[0].split(':')[1].trim();
+        var existingCSSTextColor = existingCSS[1].split(':')[1].trim();
+        var existingCSSFontFamily = existingCSS[2].split(':')[1].trim();
+        var existingCSSFontSize = existingCSS[3].split(':')[1].trim();
 
-      if (!newTextColor) {
-        newTextColor = existingCSSTextColor;
-      }
-
-      if (!newFontFamily) {
-        newFontFamily = existingCSSFontFamily;
-      }
-
-      if (!newFontSize) {
-        newFontSize = existingCSSFontSize;
+        // If no new value was set, preserve the existing CSS value
+        if (!newBackgroundColor) {
+          newBackgroundColor = existingCSSBackgroundColor;
+        }
+        if (!newTextColor) {
+          newTextColor = existingCSSTextColor;
+        }
+        if (!newFontFamily) {
+          newFontFamily = existingCSSFontFamily;
+        }
+        if (!newFontSize) {
+          newFontSize = existingCSSFontSize;
+        }
       }
 
       // Combine all updates into single CSS statement
@@ -140,14 +140,15 @@ function saveSettings() {
                    'font-family: ' + newFontFamily + '; ' +
                    'font-size: ' + newFontSize + ';';
 
-      chrome.tabs.insertCSS({code: newCSS}, function() { 
-        alert('Updated: ' + '\n' +
+      var msg = 'Updated: ' + '\n' +
               '- Background Color: ' + newBackgroundColor + '\n' +
               '- Text Color: ' + newTextColor + '\n' +
               '- Font Family: ' + newFontFamily + '\n' + 
-              '- Font Size: ' + form.elements.ftSize.value + '\n' +
-              '- Theme: ' + newTheme + '\n'
-              )});
+              '- Font Size: ' + newFontSize + '\n';
+
+      chrome.tabs.insertCSS({code: newCSS}, function() {
+        alert(msg);
+      });
       storage.set({'css': newCSS});
     })
   }

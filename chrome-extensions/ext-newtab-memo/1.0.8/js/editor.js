@@ -93,12 +93,13 @@ function loadOptionChanges() {
       adjustViewSize();
     }
   });
-  storage.get('webFont', function(items) {
-    // Experimental: web font
-    if (items.webFont)
-    document.getElementById("webFont").href = 'https://fonts.googleapis.com/css?family=' + items.webFont;
-    alert('https://fonts.googleapis.com/css?family=' + items.webFont);
 
+  // ** Experimental: web font
+  storage.get('webFont', function(items) {
+    if (items.webFont) {
+      webFont = items.webFont.replace(' ', '+'); // Rough URL encoding
+      document.getElementById("webFont").href = 'https://fonts.googleapis.com/css?family=' + webFont;
+    }
   });
 }
 
