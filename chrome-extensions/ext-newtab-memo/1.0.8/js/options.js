@@ -5,16 +5,14 @@
 */
 
 var storage = chrome.storage.local;
-
 var form = document.querySelector("form");
-var restoreDefaultsButton = document.querySelector('button.restoreDefaults');
 form.addEventListener('submit', saveSettings);
+var restoreDefaultsButton = document.querySelector('button.restoreDefaults');
 restoreDefaultsButton.addEventListener('click', restoreDefaults);
 
-loadOptions();
+loadAutosaveOptions();
 
-
-function loadOptions() {
+function loadAutosaveOptions() {
   storage.get('autosave', function(items) {
     if (items.autosave == 'yes') {
       document.getElementById('autosave').checked = true;

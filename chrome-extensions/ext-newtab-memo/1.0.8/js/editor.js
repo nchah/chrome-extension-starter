@@ -6,7 +6,6 @@
 */
 
 var storage = chrome.storage.local;
-
 var textarea = document.querySelector('textarea');
 var resetTextButton = document.querySelector('img.resetText');
 var saveTextButton = document.querySelector('img.saveText');
@@ -14,17 +13,17 @@ var optionsButton = document.querySelector('img.optionsPage');
 
 loadChanges();
 loadOptionChanges();
+autosaveChanges();
 
 optionsButton.addEventListener('click', openOptions);
 saveTextButton.addEventListener('click', saveChanges);
 resetTextButton.addEventListener('click', resetChanges);
 
-autosaveChanges();
-
 // Experimental: autosave
 function autosaveChanges() {
   storage.get('autosave', function(items) {
     if (items.autosave == 'yes') {
+      // Set time interval for autosave
       var interval = window.setInterval(function() {
         var text = textarea.value;
         if (text) {
@@ -58,7 +57,6 @@ function saveChanges() {
 }
 
 function resetChanges() {
-  // storage.clear would achieve the same thing.
   storage.remove('txt');
   textarea.value = '';
 }
@@ -69,7 +67,6 @@ function loadChanges() {
       textarea.value = items.txt;
     }
   });
-
   adjustViewSize();
 }
 
@@ -140,6 +137,3 @@ function adjustViewSize() {
   // Text box row formula; the "- 2" to leave room for Save, etc. buttons
   document.getElementById("text-area").rows = ((height / adjustment) - 2);
 }
-
-
-
