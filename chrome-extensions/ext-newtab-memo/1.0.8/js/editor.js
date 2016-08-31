@@ -67,7 +67,7 @@ function loadChanges() {
       textarea.value = items.txt;
     }
   });
-  adjustViewSize();
+  // adjustViewSize();
 }
 
 
@@ -86,9 +86,8 @@ function loadOptionChanges() {
       // Load new CSS settings
       document.getElementById("text-area").style = items.css;
       document.getElementsByTagName("BODY")[0].style = items.css;
-      
-      adjustViewSize();
     }
+    adjustViewSize();
   });
 
   // ** Experimental: web font
@@ -101,39 +100,8 @@ function loadOptionChanges() {
 }
 
 function adjustViewSize() {
-  // Automatically adjust the textarea box depending on browser tab size
-  // Get the font size used in the text box
-  var textFontSizeLength = document.getElementById("text-area").style.fontSize.length;
-  // Slice out the "px" portion in the tail end
-  var textFontSizeRaw = document.getElementById("text-area").style.fontSize.slice(0, textFontSizeLength - 2);
-  // Split by "." and use the first number value as font size
-  var textFontSize = textFontSizeRaw.split(".")[0];
-
-  // For example, for font 12 = Approximating 1 row in Text area as 15 in height; font 10 = 13
-  var adjustment_array = {
-    '8': 9.75,
-    '9': 11,
-    '10': 13,
-    '11': 14,
-    '12': 15,
-    '13': 16,
-    '14': 17,
-    '15': 18,
-    '16': 19.5,
-    '17': 21,
-    '18': 22,
-    '19': 23,
-    '20': 24
-  }
-
-  if (adjustment_array[textFontSize]) {
-    var adjustment = adjustment_array[textFontSize];
-  } else {
-    // Setting this as the default
-    adjustment = 15;
-  }
-
-  var height = document.documentElement.clientHeight;
-  // Text box row formula; the "- 2" to leave room for Save, etc. buttons
-  document.getElementById("text-area").rows = ((height / adjustment) - 2);
+  var windowHeight = document.documentElement.clientHeight;
+  textareaHeight = windowHeight - 70;
+  textareaHeight = textareaHeight.toString() + 'px';
+  document.getElementById("text-area").style.height = textareaHeight;
 }

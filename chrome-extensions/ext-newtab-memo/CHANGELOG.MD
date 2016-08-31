@@ -15,7 +15,7 @@ Divided into Bugs (broken functionality) and Feature Requests (nice to have func
 
 ### Bugs
 - DONE v1.0.7 - adjust CSS save settings, allow adjusting 1 by 1
-- better method to calculate textarea row v. font adjustment formula in text box
+- DONE v1.0.8 - better method to calculate textarea row v. font adjustment formula in text box
 - DONE v1.0.7 - popup page title text overlap fixed
 
 ### Feature Requests
@@ -31,7 +31,7 @@ Divided into Bugs (broken functionality) and Feature Requests (nice to have func
 
 v1.0.8
 - Implemented more fonts through web fonts in options
-- Starting textarea size calculation, using line height
+- Updated textarea size calculation with client height rather than rows calculation
 
 v1.0.7
 - Popup page extension title text overlap fixed, missed in v1.0.6

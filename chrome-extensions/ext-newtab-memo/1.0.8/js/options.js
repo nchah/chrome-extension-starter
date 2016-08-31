@@ -16,7 +16,7 @@ function loadAutosaveOptions() {
   storage.get('autosave', function(items) {
     if (items.autosave == 'yes') {
       document.getElementById('autosave').checked = true;
-    } else if (items.autosave != 'yes') {
+    } else if (items.autosave == 'no') {
       document.getElementById('autosave').checked = false;
     }
   })
@@ -24,23 +24,15 @@ function loadAutosaveOptions() {
 
 function restoreDefaults() {
   storage.remove('css');
+  newCSSTheme = 'background-color: #404040; color: white; font-family: monospace; font-size: 14px;';
+  chrome.tabs.insertCSS({code: newCSSTheme});
+  storage.set({'css': newCSSTheme});
   alert("Default settings restored.");
 }
 
-function saveSettings() {
-  // ** Experimental: autosave
-  var autosave = form.elements.autosave.value;
-  var autosave = document.getElementById('autosave').checked;
-  if (autosave) {
-    storage.set({'autosave': 'yes'});
-  } else if (!autosave) {
-    storage.set({'autosave': 'no'});
-  }
-
-  // Apply a new curated theme of styles 
+function saveCuratedThemeSettings() {
   var newTheme = form.elements.themeSelect.value;
-  if (newTheme.length > 0) {
-    switch (newTheme) {
+  switch (newTheme) {
       case 'Dark Default':
         newCSSTheme = 'background-color: #404040; color: white; font-family: monospace; font-size: 14px;';
         break;
@@ -62,6 +54,22 @@ function saveSettings() {
     }
     chrome.tabs.insertCSS({code: newCSSTheme}, alert('Updated to theme: ' + newTheme));
     storage.set({'css': newCSSTheme});
+}
+
+function saveSettings() {
+  // ** Experimental: autosave
+  var autosave = form.elements.autosave.value;
+  var autosave = document.getElementById('autosave').checked;
+  if (autosave) {
+    storage.set({'autosave': 'yes'});
+  } else if (!autosave) {
+    storage.set({'autosave': 'no'});
+  }
+
+  // Apply a new curated theme of styles 
+  var newTheme = form.elements.themeSelect.value;
+  if (newTheme.length > 0) {
+    saveCuratedThemeSettings();
   }
 
   // Setting variables for CSS elements; Choosing between dropdown or input where needed
@@ -90,10 +98,11 @@ function saveSettings() {
     newFontFamily = newFontFamily2;
   }
   // ** Experimental: web fonts
-  var webFont = document.getElementById('fontFamilyWeb').value;
+  var webFont = form.elements.fontFamilyWeb.value;
   if (webFont) {
     storage.set({'webFont': webFont});
     newFontFamily = webFont;
+    // newFontSize = '14px';
   }
 
   // * New font size
@@ -127,7 +136,7 @@ function saveSettings() {
         if (!newFontFamily) {
           newFontFamily = existingCSSFontFamily;
         }
-        if (!newFontSize) {
+        if (!newFontSize && existingCSSFontSize.length > 2) {
           newFontSize = existingCSSFontSize;
         }
       }
