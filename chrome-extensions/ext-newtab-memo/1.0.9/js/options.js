@@ -104,7 +104,6 @@ function saveSettings() {
     newFontFamily = webFont;
     // newFontSize = '14px';
   }
-
   // * New font size
   var newFontSize = form.elements.fontSize.value + "px";
 
@@ -146,7 +145,7 @@ function saveSettings() {
                    'color: ' + newTextColor + '; ' +
                    'font-family: ' + newFontFamily + '; ' +
                    'font-size: ' + newFontSize + ';';
-
+      
       var msg = 'Updated: ' + '\n' +
               '- Background Color: ' + newBackgroundColor + '\n' +
               '- Text Color: ' + newTextColor + '\n' +

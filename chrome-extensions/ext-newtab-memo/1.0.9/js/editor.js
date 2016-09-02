@@ -100,6 +100,7 @@ function loadOptionChanges() {
 }
 
 function adjustViewSize() {
+  // Adjust the size of textarea according to Chrome window size
   var windowHeight = document.documentElement.clientHeight;
   textareaHeight = windowHeight - 70;
   textareaHeight = textareaHeight.toString() + 'px';
