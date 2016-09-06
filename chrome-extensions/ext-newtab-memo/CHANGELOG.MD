@@ -29,6 +29,10 @@ Divided into Bugs (broken functionality) and Feature Requests (nice to have func
 
 ## Versions
 
+**stable**
+v1.1.0
+- Moving experimental features to stable
+
 v1.0.9 - 2016-09-05
 - General code refactoring and clean up
 - Improved autosave with more optimized function calls
