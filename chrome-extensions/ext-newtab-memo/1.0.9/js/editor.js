@@ -23,11 +23,17 @@ resetTextButton.addEventListener('click', resetChanges);
 function autosaveChanges() {
   storage.get('autosave', function(items) {
     if (items.autosave == 'yes') {
+      // specify the initial text - TODO: refactor to scale for large texts
+      // try to check if dom element is touched or another way
+      initialText = textarea.value;
       // Set time interval for autosave
       var interval = window.setInterval(function() {
         var text = textarea.value;
-        if (text) {
+        if (text !== initialText) {
           storage.set({'txt': text});
+          initialText = text;
+          // For debugging to see save calls:
+          // console.log("Text saved");
         } 
       }, 1000);
     }
@@ -69,7 +75,6 @@ function loadChanges() {
   });
   // adjustViewSize();
 }
-
 
 function openOptions() {
   if (chrome.runtime.openOptionsPage) {

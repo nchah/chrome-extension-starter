@@ -29,8 +29,9 @@ Divided into Bugs (broken functionality) and Feature Requests (nice to have func
 
 ## Versions
 
-v1.0.9
+v1.0.9 - 2016-09-05
 - General code refactoring and clean up
+- Improved autosave with more optimized function calls
 
 v1.0.8 - 2016-08-30
 - Implemented more fonts through web fonts in options
