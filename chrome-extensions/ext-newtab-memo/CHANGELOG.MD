@@ -29,31 +29,33 @@ Divided into Bugs (broken functionality) and Feature Requests (nice to have func
 
 ## Versions
 
-v1.0.8
+v1.0.9
+- General code refactoring and clean up
+
+v1.0.8 - 2016-08-30
 - Implemented more fonts through web fonts in options
 - Updated textarea size calculation with client height rather than rows calculation
 
-v1.0.7
+v1.0.7 - 2016-08-27
 - Popup page extension title text overlap fixed, missed in v1.0.6
 - Adjust CSS save settings, allow adjusting 1 by 1
 
-v1.0.6
+v1.0.6 - 2016-08-24
 - Minor bug with popup page text overlap
 - Implemented autosave of text as experimental option
 
-v1.0.5
+v1.0.5 - 2016-08-24
 - Hot fix: Ctrl + Shift + S save keyboard shortcut
 
-v1.0.4
+v1.0.4 - 2016-08-23
 - Added Alt text to all buttons: Save, Reset, Settings
 - Updated Popup page options icon to material design style
 - Added new curated themes on Options page, adjusted page format
 
-v1.0.3
+v1.0.3 - 2016-08-16
 - Updated to material design icons and removed text buttons on new tabs
 - Added keyboard shortcut (Ctrl + S on all OSes) to save text
 
-v1.0.2
+v1.0.2 - 2016-08-15
 - Bug fix for saving functionality
-
 
