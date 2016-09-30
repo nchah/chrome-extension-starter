@@ -134,16 +134,9 @@ The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-mem
 ![newtab-memo-screenshot-4.png](/images/newtab-memo-screenshot-4.png?raw=true)
 
 
-### Not Launched
-
-The following themes are not yet on the Chrome Web Store:
-- theme-google-pastel
-- theme-green-mint-v1
-- theme-blue-mint-v1
-
 
 ## Stats
 
-The developer dashboard in the Chrome Web Store allows for easy tracking of extensions and themes. It is possible to download a CSV dump of all stats to date for each application.
+The developer dashboard in the Chrome Web Store allows for easy tracking of extensions and themes. CSV dumps of all 'download' and 'impression' stats to date are available for each theme or extension.
 
 
