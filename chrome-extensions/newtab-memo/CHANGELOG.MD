@@ -29,9 +29,13 @@ Divided into Bugs (broken functionality) and Feature Requests (nice to have func
 
 ## Versions
 
+v1.1.1
+
+
 **stable**
 v1.1.0
 - Moving experimental features to stable
+- Options page to display current CSS settings
 
 v1.0.9 - 2016-09-05
 - General code refactoring and clean up
