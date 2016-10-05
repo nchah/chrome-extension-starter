@@ -131,7 +131,7 @@ The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-mem
 
 ![newtab-memo-screenshot-3.png](/images/newtab-memo-screenshot-3.png?raw=true)
 
-![newtab-memo-screenshot-4.png](/images/newtab-memo-screenshot-4.png?raw=true)
+![newtab-memo-screenshot-5.png](/images/newtab-memo-screenshot-5.png?raw=true)
 
 
 
