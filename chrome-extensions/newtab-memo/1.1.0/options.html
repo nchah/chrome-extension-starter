@@ -27,10 +27,13 @@
 				</tr>
 				<tr>
 					<td><h3>&nbsp;> Detailed Options</h3>
-					<p id="sub-title">Or adjust each option one by one.</p></td>
+					<div id="sub-title">Adjust each option separately.</div>
+					<div id="sub-title">Current values shown in ().</div>
+					<br></td>
 				</tr>
 				<tr>
-					<td>Background Color: </td>
+					<td>Background Color: 
+					<div id="background_color" class="indicator"></div></td>
 					<td>
 						<input type="text" name="bgColorCustom" size="15" placeholder="#HEX color">
 						or 
@@ -57,7 +60,8 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Text Color: </td>
+					<td>Text Color: 
+					<div id="text_color" class="indicator"></div></td>
 					<td>
 						<input type="text" name="textColorCustom" size="15" placeholder="#HEX color"> 
 						or 
@@ -84,8 +88,8 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Font Family: 
-					<!-- <br>or choose from <a href="https://fonts.google.com/" style="color: white; font-style: italic;">Google Fonts</a></td> -->
+					<td>Font Family:
+					<div id="font_family" class="indicator"></div></td>
 					<td>
 						<input type="text" name="fontFamilyCustom" size="15">
 						or
@@ -98,15 +102,15 @@
 					</td>
 				</tr>
 				<tr>
-					<td>Font Size: </td>
+					<td>Font Size: 
+					<div id="font_size" class="indicator"></div></td>
 					<td>
 						<input type="text" name="fontSize" size="15">
 					</td>
 				</tr>
+					<td><h3>&nbsp;> Extension Options</h3>
+					<p id="sub-title">Customize how this extension works.</p></td>
 				<tr>
-					<td><h3>&nbsp;> Experimental</h3>
-					<p id="sub-title">These options are under development.</p></td>
-				</tr>
 				<tr>
 					<td>Autosave:</td>
 					<td>
@@ -115,10 +119,17 @@
 				</tr>
 				<tr>
 					<td>Web Fonts:
-					<br>(choose font name from <a href="https://fonts.google.com/" style="color: white; font-style: italic;">Google Fonts</a>)</td>
+					<br>(Enter font name from <a href="https://fonts.google.com/" style="color: white; font-style: italic;">Google Fonts</a>)
+					<br><br></td>
 					<td>
 						<input type="text" id="fontFamilyWeb" name="fontFamilyWeb" size="15" placeholder="Font family name">
 					</td>
+				</tr>
+				<tr>
+					<td><h3>&nbsp;> Experimental</h3>
+					<p id="sub-title">These options are under development.</p></td>
+				</tr>
+				<tr>
 				</tr>
 			</table>
 			<br>

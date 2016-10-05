@@ -11,6 +11,7 @@ var restoreDefaultsButton = document.querySelector('button.restoreDefaults');
 restoreDefaultsButton.addEventListener('click', restoreDefaults);
 
 loadAutosaveOptions();
+loadHTMLChanges();
 
 function loadAutosaveOptions() {
   storage.get('autosave', function(items) {
@@ -37,7 +38,7 @@ function saveCuratedThemeSettings() {
         newCSSTheme = 'background-color: #404040; color: white; font-family: monospace; font-size: 14px;';
         break;
       case 'Rosy Rose':
-        newCSSTheme = 'background-color: #ffcccc; color: maroon; font-family: ; font-size: ;';
+        newCSSTheme = 'background-color: #ffcccc; color: maroon; font-family: ; font-size: 14px;';
         break;
       case 'Baby Blue':
         newCSSTheme = 'background-color: #99ccff; color: navy; font-family: monospace; font-size: 14px;';
@@ -158,4 +159,34 @@ function saveSettings() {
       storage.set({'css': newCSS});
     })
   }
+}
+
+function loadHTMLChanges() {
+  // Update the HTML text to indicate the current Detailed Options settings
+  storage.get('css', function(items) {
+    if (items.css) {
+      var existingCSS = items.css.split(';', 4); // limit to the 4 CSS options for now
+      // Ex: background-color: #ffcccc, color: maroon, font-family: monospace, font-size: 14px
+      var existingCSSBackgroundColor = existingCSS[0].split(':')[1].trim();
+      var existingCSSTextColor = existingCSS[1].split(':')[1].trim();
+      var existingCSSFontFamily = existingCSS[2].split(':')[1].trim();
+      var existingCSSFontSize = existingCSS[3].split(':')[1].trim();
+      // Displaying a default value due to bug with setting font size after adjusting font family
+      if (existingCSSFontSize.length <= 2) {
+        existingCSSFontSize = '12px';
+      }
+
+      var backgroundColorHTML = document.getElementById('background_color');
+      backgroundColorHTML.innerHTML = '(' + existingCSSBackgroundColor + ')';
+
+      var textColorHTML = document.getElementById('text_color');
+      textColorHTML.innerHTML = '(' + existingCSSTextColor + ')';
+
+      var fontFamilyHTML = document.getElementById('font_family');
+      fontFamilyHTML.innerHTML = '(' + existingCSSFontFamily + ')';
+
+      var fontSizeHTML = document.getElementById('font_size');
+      fontSizeHTML.innerHTML = '(' + existingCSSFontSize + ')';
+    }
+  });
 }

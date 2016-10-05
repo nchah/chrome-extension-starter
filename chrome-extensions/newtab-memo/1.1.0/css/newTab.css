@@ -37,6 +37,11 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+.indicator {
+	color: silver; 
+	font-style: italic;
+}
+
 #sub-title {
 	color: silver; 
 	font-style: italic;
