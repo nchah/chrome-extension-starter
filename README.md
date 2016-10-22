@@ -103,40 +103,39 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 
 ## Published Samples
 
-### theme-dark-v1
-*>450 users*
+### theme: dark-v1
 
-The published [Dark Theme - Charcoal](https://chrome.google.com/webstore/detail/dark-theme-charcoal/bookmfpildhgmigenbeeonhljjbgfple) is available on the Chrome Web Store.
+*>450 users* - The published [Dark Theme - Charcoal](https://chrome.google.com/webstore/detail/dark-theme-charcoal/bookmfpildhgmigenbeeonhljjbgfple) is available on the Chrome Web Store.
 
 ![charcoal-theme-screenshot.png](/images/charcoal-theme-screenshot.png?raw=true)
 
-### theme-unicorn-v1
-*>100 users*
 
-The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-theme/cmocghjdibclgmdlkmmdpinlmfandkfh) is available on the Chrome Web Store.
+### theme-unicorn-v1
+
+*>300 users* - The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-theme/cmocghjdibclgmdlkmmdpinlmfandkfh) is available on the Chrome Web Store.
 
 ![unicorn-theme-screenshot.png](/images/unicorn-theme-screenshot.png?raw=true)
 
-### ext-darkedit-ntp
-*~12 users*
 
-The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darkedit-new-tab/lcjehgmglbjnagbdcbobefdbpeippiig) extension is available on the Chrome Web Store.
+### extension: newtab-memo
 
-![darkedit-ntp-screenshot.png](/images/darkedit-ntp-screenshot.png?raw=true)
-
-### ext-newtab-memo
-*~12 users*
-
-The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
+*~30 users* - The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
 
 ![newtab-memo-screenshot-3.png](/images/newtab-memo-screenshot-3.png?raw=true)
 
 ![newtab-memo-screenshot-5.png](/images/newtab-memo-screenshot-5.png?raw=true)
 
 
+### extension: darkedit-ntp
+
+*~12 users* - The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darkedit-new-tab/lcjehgmglbjnagbdcbobefdbpeippiig) extension is available on the Chrome Web Store.
+
+![darkedit-ntp-screenshot.png](/images/darkedit-ntp-screenshot.png?raw=true)
+
 
 ## Stats
 
-The developer dashboard in the Chrome Web Store allows for easy tracking of extensions and themes. CSV dumps of all 'download' and 'impression' stats to date are available for each theme or extension.
+The Developer Dashboard in the Chrome Web Store allows for easy tracking and maintenance of extensions and themes.
 
+CSV dumps of all 'Installations', 'Impressions', and 'Total Current Users' stats to date are available for each theme or extension.
 
