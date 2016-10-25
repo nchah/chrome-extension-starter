@@ -30,6 +30,7 @@ Divided into Bugs (broken functionality) and Feature Requests (nice to have func
 ## Versions
 
 v1.1.1
+- Implement multiple tabs or columns within the editor (experimental option for now). 
 
 
 **stable**
