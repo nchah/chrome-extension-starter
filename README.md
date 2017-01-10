@@ -105,21 +105,21 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 
 ### theme: dark-v1
 
-*>450 users* - The published [Dark Theme - Charcoal](https://chrome.google.com/webstore/detail/dark-theme-charcoal/bookmfpildhgmigenbeeonhljjbgfple) is available on the Chrome Web Store.
+*>500 users* - The published [Dark Theme - Charcoal](https://chrome.google.com/webstore/detail/dark-theme-charcoal/bookmfpildhgmigenbeeonhljjbgfple) is available on the Chrome Web Store.
 
 ![charcoal-theme-screenshot.png](/images/charcoal-theme-screenshot.png?raw=true)
 
 
 ### theme-unicorn-v1
 
-*>300 users* - The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-theme/cmocghjdibclgmdlkmmdpinlmfandkfh) is available on the Chrome Web Store.
+*>400 users* - The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-theme/cmocghjdibclgmdlkmmdpinlmfandkfh) is available on the Chrome Web Store.
 
 ![unicorn-theme-screenshot.png](/images/unicorn-theme-screenshot.png?raw=true)
 
 
 ### extension: newtab-memo
 
-*~30 users* - The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
+*~20 users* - The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
 
 ![newtab-memo-screenshot-3.png](/images/newtab-memo-screenshot-3.png?raw=true)
 
@@ -128,7 +128,7 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 
 ### extension: darkedit-ntp
 
-*~12 users* - The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darkedit-new-tab/lcjehgmglbjnagbdcbobefdbpeippiig) extension is available on the Chrome Web Store.
+*~80 users* - The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darkedit-new-tab/lcjehgmglbjnagbdcbobefdbpeippiig) extension is available on the Chrome Web Store.
 
 ![darkedit-ntp-screenshot.png](/images/darkedit-ntp-screenshot.png?raw=true)
 
