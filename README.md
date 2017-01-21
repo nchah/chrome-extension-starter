@@ -119,7 +119,9 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 
 ### extension: newtab-memo
 
-*~20 users* - The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
+GitHub: [nchah/newtab-memo-extension](https://github.com/nchah/newtab-memo-extension)
+
+*~80 users* - The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
 
 ![newtab-memo-screenshot-3.png](/images/newtab-memo-screenshot-3.png?raw=true)
 
@@ -128,7 +130,7 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 
 ### extension: darkedit-ntp
 
-*~80 users* - The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darkedit-new-tab/lcjehgmglbjnagbdcbobefdbpeippiig) extension is available on the Chrome Web Store.
+*~20 users* - The published [DarkEdit New Tab](https://chrome.google.com/webstore/detail/darkedit-new-tab/lcjehgmglbjnagbdcbobefdbpeippiig) extension is available on the Chrome Web Store.
 
 ![darkedit-ntp-screenshot.png](/images/darkedit-ntp-screenshot.png?raw=true)
 
