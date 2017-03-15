@@ -112,7 +112,7 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 
 ### theme-unicorn-v1
 
-*>400 users* - The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-theme/cmocghjdibclgmdlkmmdpinlmfandkfh) is available on the Chrome Web Store.
+*>800 users* - The published [Unicorn Theme](https://chrome.google.com/webstore/detail/unicorn-theme/cmocghjdibclgmdlkmmdpinlmfandkfh) is available on the Chrome Web Store.
 
 ![unicorn-theme-screenshot.png](/images/unicorn-theme-screenshot.png?raw=true)
 
@@ -121,7 +121,7 @@ Documentation on creating themes is a bit limited so referencing the Chromium (w
 
 GitHub: [nchah/newtab-memo-extension](https://github.com/nchah/newtab-memo-extension)
 
-*~80 users* - The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
+*~100 users* - The published [NewTab Memo](https://chrome.google.com/webstore/detail/newtab-memo/gmahiocgkhbehfpmdndjpppdehlccaoh) extension is available on the Chrome Web Store.
 
 ![newtab-memo-screenshot-3.png](/images/newtab-memo-screenshot-3.png?raw=true)
 
