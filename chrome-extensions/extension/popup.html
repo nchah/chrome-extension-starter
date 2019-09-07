@@ -11,14 +11,41 @@
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
         font-size: 100%;
+        word-wrap: break-word;
       }
       #status {
-        /* avoid an excessively wide status text */
         white-space: pre;
         text-overflow: ellipsis;
         overflow: hidden;
-        max-width: 400px;
+        min-width: 200px;
+          max-width: 200px;
+        min-height: 200px;
+        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+        animation: mymove 5s infinite;
+        word-wrap: break-word;
       }
+
+@-webkit-keyframes mymove {
+  from {background-color: rgba(50, 115, 220, 0.3);}
+  to {background-color: hsla(14, 100%, 53%, 0.6);}
+}
+        
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 50px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 50px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {background-color: rgba(50, 115, 220, 0.3);}
+  to {background-color: hsla(14, 100%, 53%, 0.6);}
+}
     </style>
 
     <!--
@@ -31,7 +58,7 @@
   </head>
   <body>
     <div id="status"></div>
-    <img id="image-result" hidden>
+    <img id="image-result">
   </body>
 </html>
 
